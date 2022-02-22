@@ -7,23 +7,23 @@
 .container {
   font-family: 'Comfortaa', cursive;
   position: relative;
-  top: -8px;
-  border: 5px solid lightsalmon;
-  border-radius: 3px;
+  top: -80px;
+  border: 10px solid aquamarine;
+  border-radius: 30px;
 }
 
-.sneh_app {
+.sneh_app{
   text-align: center;
-  font-family: 'Comfort', cursive;
-  background-color: lightgreen;
-  margin-bottom: 0rem;
+  font-family: 'Comfortaa', cursive;
+  background-color: aquamarine;
+  margin-bottom: 1rem;
 }
 
 .search-box {
   text-align: center;
-  height: 1000px;
+  height: 600px;
   background-color: lightcoral;
-  border-radius: 10px;
+  border-radius: 20px;
   border: 2px solid white;
 }
 
@@ -33,27 +33,27 @@
 }
 
 #search-city {
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 #city-history {
-  height: 300px;
+  height: 400px;
   margin-top: 40px;
 }
 
 .city-button {
-  width: 50%;
+  width: 80%;
   margin: 5px;
 }
 
 .results-top {
-  height: 60%;
+  height: 55%;
 }
 
 .weather-results {
   background-color: lightblue;
   border: 2px solid white;
-  border-radius: 15px;
+  border-radius: 20px;
 }
 
 .current-temp {
@@ -71,7 +71,7 @@
 #temp-top-text {
   position: absolute;
   top: 40px;
-  width: 68%;
+  width: 100%;
   padding-left: 75px;
   padding-right: 75px;
 }
@@ -79,14 +79,14 @@
 #temperature {
   position: absolute;
   top: 80px;
-  width: 35%;
+  width: 100%;
   font-size: 120px;
 }
 
 #weather-description {
   position: absolute;
   top: 250px;
-  width: 35%;
+  width: 100%;
 }
 
 .weather-details {
@@ -97,7 +97,7 @@
 #weather-list {
   margin: 0;
   position: absolute;
-  top: 45%;
+  top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
@@ -109,7 +109,7 @@
 .dot {
   height: 20px;
   width: 20px;
-  border-radius: 54%;
+  border-radius: 50%;
   display: inline-block;
 }
 

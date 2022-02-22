@@ -2,7 +2,7 @@ let historyDiv = document.getElementById("city-history");
 let cityHistory = [];
 let apiKey = "462e1590393042b6de4c11d6437c183d";
 
-// Populates up to 7 buttons on page load or refresh
+// Populates up to 5 buttons on page load or refresh
 $(document).ready(function () {
 
   if (window.localStorage.length == 0) {
@@ -46,7 +46,7 @@ function makeButton(city) {
 
   localStorage.setItem("cityHistory", JSON.stringify(cityHistory));
 
-  if (cityHistory.length > 7) {
+  if (cityHistory.length > 5) {
     historyDiv.lastElementChild.remove();
     var newCity = $("<button>").text(city).addClass("btn btn-info city-button")
       .attr("id", city);
@@ -100,14 +100,14 @@ function getWeather(city) {
 
           let conditions = response.current.weather[0].main;
 
-          if (conditions === "Clouds") {
-            if (response.current.weather[0].description === "scattered clouds" ||
-              response.current.weather[0].description === "broken clouds") {
+          if (conditions == "Clouds") {
+            if (response.current.weather[0].description == "scattered clouds" ||
+              response.current.weather[0].description == "broken clouds") {
               conditions = "Partly Cloudy";
             } else {
               conditions = "Clouds";
             }
-          } else if (conditions === "Mist") {
+          } else if (conditions == "Mist") {
             conditions = "Haze";  // I don't have an image for Mist
           }
 
@@ -141,16 +141,16 @@ function getWeather(city) {
 
           // Populates forecast weather images
           for (i = 1; i < 6; i++) {
-            if (response.daily[i].weather[0].main === "Clouds") {
-              if (response.daily[i].weather[0].description === "scattered clouds"
-                || response.daily[i].weather[0].description === "broken clouds") {
+            if (response.daily[i].weather[0].main == "Clouds") {
+              if (response.daily[i].weather[0].description == "scattered clouds"
+                || response.daily[i].weather[0].description == "broken clouds") {
                 conditions = "Partly Cloudy";
                 fillDeets(i);
               } else {
                 conditions = "Clouds";
                 fillDeets(i);
               }
-            } else if (response.daily[i].weather[0].main === "Mist") {
+            } else if (response.daily[i].weather[0].main == "Mist") {
               conditions = "Haze";  // I don't have an image for Mist
               fillDeets(i);
             } else {
