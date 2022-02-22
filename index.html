@@ -1,41 +1,121 @@
-<!doctype html>
-<html class="no-js" lang="">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juniper's Weather App</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/main.css">
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-
-  <meta name="theme-color" content="#fafafa">
 </head>
 
+<header>
+  <div class="sneh_app">
+    <h1>Wow Weather App(A new way to see climate around you)</h1>
+    <p class="lead">See around you :)</p>
+  </div>
+</header>
+
 <body>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 search-box">
+      <label for="city-search">Please type in your preferred city here</label>
+      <input type="text" placeholder="Enter city here..." id="search-city">
+      <button class="btn btn-info" id="search-button"><i class="fa fa-search"></i>Search</button>
+      <div id="city-history"></div>
+    </div>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+    <div class="col-md-9 weather-results">
+      <div class="row results-top">
+        <div class="col-sm-12 col-md-6 current-temp">
+          <img id="today-image" src="./img/colors.jpg" alt="Color cloud" height="300px"
+               width="300px">
+          <h5 id="temp-top-text"><strong>Search for a city.</strong></h5>
+          <div id="temperature"><span id="fTemp"></span></div>
+          <h3 id="weather-description"></h3>
+        </div>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+        <div class="col-sm-12 col-md-6 weather-details">
+          <div id="weather-list">
+            <h4 id="date"></h4>
+            <h4 id="humidity"></h4>
+            <h4 id="windSpeed"></h4>
+            <h4 id="uvIndex"></h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="row results-bottom">
+        <div class="col forecast" id="forecast1">
+          <div class="card text-center">
+            <h5 class="card-header future-date"></h5>
+            <div class="card-body">
+              <img class="card-img-top" src="./img/colors.jpg" alt="Color cloud">
+              <h6 class="future-temp"></h6>
+              <h6 class="future-cond"></h6>
+            </div>
+          </div>
+        </div>
+        <div class='w-100 d-md-none'></div>
+
+        <div class="col forecast" id="forecast2">
+          <div class="card text-center">
+            <h5 class="card-header future-date"></h5>
+            <div class="card-body">
+              <img class="card-img-top" src="./img/colors.jpg" alt="Color cloud">
+              <h6 class="future-temp"></h6>
+              <h6 class="future-cond"></h6>
+            </div>
+          </div>
+        </div>
+        <div class='w-100 d-md-none'></div>
+
+        <div class="col forecast" id="forecast3">
+          <div class="card text-center">
+            <h5 class="card-header future-date"></h5>
+            <div class="card-body">
+              <img class="card-img-top" src="./img/colors.jpg" alt="Color cloud">
+              <h6 class="future-temp"></h6>
+              <h6 class="future-cond"></h6>
+            </div>
+          </div>
+        </div>
+        <div class='w-100 d-md-none'></div>
+
+        <div class="col forecast" id="forecast4">
+          <div class="card text-center">
+            <h5 class="card-header future-date"></h5>
+            <div class="card-body">
+              <img class="card-img-top" src="./img/colors.jpg" alt="Color cloud">
+              <h6 class="future-temp"></h6>
+              <h6 class="future-cond"></h6>
+            </div>
+          </div>
+        </div>
+        <div class='w-100 d-md-none'></div>
+
+        <div class="col forecast" id="forecast5">
+          <div class="card text-center">
+            <h5 class="card-header future-date"></h5>
+            <div class="card-body">
+              <img class="card-img-top" src="./img/colors.jpg" alt="Color cloud">
+              <h6 class="future-temp"></h6>
+              <h6 class="future-cond"></h6>
+            </div>
+          </div>
+        </div>
+        <div class='w-100 d-md-none'></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 
 </html>
