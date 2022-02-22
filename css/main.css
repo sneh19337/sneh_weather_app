@@ -7,12 +7,12 @@
 .container {
   font-family: 'Comfortaa', cursive;
   position: relative;
-  top: -80px;
-  border: 10px solid aquamarine;
-  border-radius: 30px;
+  top: -5px;
+  border: 8px solid blueviolet;
+  border-radius: 50px;
 }
 
-.jumbotron {
+.sneh_app {
   text-align: center;
   font-family: 'Comfortaa', cursive;
   background-color: aquamarine;
