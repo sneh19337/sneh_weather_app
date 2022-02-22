@@ -112,7 +112,7 @@ function getWeather(city) {
           }
 
           // Populates main weather image and details
-          $("#today-image").attr("src", "./assets/images/" + conditions + ".jpg");
+          $("#today-image").attr("src", "./img/" + conditions + ".jpg");
           $("#today-image").attr("alt", conditions);
           $("#temp-top-text").html("The current temperature in <strong>" + city + "</strong> is:");
           $("#fTemp").html(convertF(response.current.temp) + "<span>&#176</span>");
@@ -160,7 +160,7 @@ function getWeather(city) {
           }
 
           function fillDeets(i) {
-            $("#forecast" + i + " img").attr("src", "./assets/images/" + conditions + ".jpg");
+            $("#forecast" + i + " img").attr("src", "./img/" + conditions + ".jpg");
             $("#forecast" + i + " .future-cond").text(conditions);
             $("#forecast" + i + " .future-temp").html(convertF(response.daily[i].temp.day) + "<span>&#176</span>");
             $("#forecast" + i + " .future-date").text(displayDate(response.daily[i].dt));

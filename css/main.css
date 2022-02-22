@@ -5,26 +5,26 @@
 }
 
 .container {
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Comfort', cursive;
   position: relative;
-  top: -80px;
-  border: 10px solid aquamarine;
+  top: -10px;
+  border: 10px solid greenyellow;
   border-radius: 30px;
 }
 
 .sneh_app{
   text-align: center;
-  font-family: 'Comfortaa', cursive;
-  background-color: aquamarine;
+  font-family: 'Comfort', cursive;
+  background-color: darkorange;
   margin-bottom: 1rem;
 }
 
 .search-box {
   text-align: center;
   height: 600px;
-  background-color: lightcoral;
+  background-color: orangered;
   border-radius: 20px;
-  border: 2px solid white;
+  border: 2px black;
 }
 
 .search-box label {
@@ -51,8 +51,8 @@
 }
 
 .weather-results {
-  background-color: lightblue;
-  border: 2px solid white;
+  background-color: greenyellow;
+  border: 2px solid greenyellow;
   border-radius: 20px;
 }
 
@@ -134,6 +134,6 @@
 .forecast {
   margin: 2px 5px 20px 5px;
   padding: 0;
-  background-color: white;
+  background-color: greenyellow;
   border-radius: 20px;
 }
