@@ -7,53 +7,53 @@
 .container {
   font-family: 'Comfortaa', cursive;
   position: relative;
-  top: -5px;
-  border: 8px solid blueviolet;
-  border-radius: 50px;
+  top: -8px;
+  border: 5px solid lightsalmon;
+  border-radius: 3px;
 }
 
 .sneh_app {
   text-align: center;
   font-family: 'Comfort', cursive;
-  background-color: deepskyblue;
-  margin-bottom: 3rem;
+  background-color: lightgreen;
+  margin-bottom: 0rem;
 }
 
 .search-box {
   text-align: center;
-  height: 600px;
-  background-color: coral;
-  border-radius: 30px;
-  border: 5px black;
+  height: 1000px;
+  background-color: lightcoral;
+  border-radius: 10px;
+  border: 2px solid white;
 }
 
 .search-box label {
-  margin-bottom: 2rem;
-  padding: 40px;
+  margin-bottom: 0rem;
+  padding: 20px;
 }
 
 #search-city {
-  margin-bottom: 55px;
+  margin-bottom: 5px;
 }
 
 #city-history {
-  height: 200px;
+  height: 300px;
   margin-top: 40px;
 }
 
 .city-button {
-  width: 80%;
+  width: 50%;
   margin: 5px;
 }
 
 .results-top {
-  height: 55%;
+  height: 60%;
 }
 
 .weather-results {
-  background-color: lightskyblue;
-  border: 2px solid black;
-  border-radius: 20px;
+  background-color: lightblue;
+  border: 2px solid white;
+  border-radius: 15px;
 }
 
 .current-temp {
@@ -71,7 +71,7 @@
 #temp-top-text {
   position: absolute;
   top: 40px;
-  width: 100%;
+  width: 68%;
   padding-left: 75px;
   padding-right: 75px;
 }
@@ -79,14 +79,14 @@
 #temperature {
   position: absolute;
   top: 80px;
-  width: 100%;
+  width: 35%;
   font-size: 120px;
 }
 
 #weather-description {
   position: absolute;
   top: 250px;
-  width: 100%;
+  width: 35%;
 }
 
 .weather-details {
@@ -97,7 +97,7 @@
 #weather-list {
   margin: 0;
   position: absolute;
-  top: 50%;
+  top: 45%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
@@ -109,7 +109,7 @@
 .dot {
   height: 20px;
   width: 20px;
-  border-radius: 50%;
+  border-radius: 54%;
   display: inline-block;
 }
 
@@ -124,7 +124,7 @@
 }
 
 .card-header {
-  padding: 20px 20px 2px 20px;
+  padding: 12px 20px 2px 20px;
 }
 
 .card-body {
@@ -134,6 +134,6 @@
 .forecast {
   margin: 2px 5px 20px 5px;
   padding: 0;
-  background-color: black;
+  background-color: white;
   border-radius: 20px;
 }
